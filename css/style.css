@@ -3,13 +3,13 @@
 :root {
     --btnColor: #213349;
     --date1: #be8442;
-    --date2: #bc6142
+    --date2: #bc6142;
     --date3: #bd425e;
     --font1: "Oswald", sans-serif;
     --footerSec2: #0b1016;
     --prim: #131c29;
     --grad: radial-gradient(
-        top center,
+        at top center,
         #38587e,
         #031620
     );
@@ -35,7 +35,7 @@ body {
 .container {
     margin: 0 auto;
     width: 96%;
-    border: 1px solid coral;
+    /* border: 1px solid coral; */
 }
 
 .content-box {
@@ -53,7 +53,8 @@ body {
 .content-heading {
     color: var(--prim);
     font-family: var(--font1);
-    font-size: calc(32px + (48 - 32) * ((100vw - 300px) / (1600 - 300)));
+    font-size: calc(36px + (56 - 36) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 400;
     text-transform: uppercase;
 }
 
@@ -67,6 +68,54 @@ body {
     font-family: sans-serif;
 }
 
+.date, .month {
+    display: block;
+    margin: 0;
+    color: var(--tert);
+    font-family: var(--font1);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.date {
+    font-size: 32px;
+}
+
+.date-div {
+    /* padding: 8px; */
+    margin-right: 16px;
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+}
+
+.date-div, .news-block {
+    float: left;
+}
+
+.footer-content {
+    padding: 10px;
+    width: calc(100% / 3);
+    float: left;
+    /* border: 1px solid yellow; */
+}
+
+.footer-heading {
+    color: var(--tert);
+    font-family: var(--font1);
+    font-size: calc(32px + (48 - 32) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.fs2-text {
+    margin: 0;
+    color: #777;
+    font-family: var(--font1);
+    font-size: 10px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
 
 .hero-img {
     display: block;
@@ -118,11 +167,69 @@ body {
 .more-btn {
     padding: 10px 12px;
     color: var(--tert);
-    font-family: sans-serif;
+    font-family: var(--font1);
+    font-weight: 450;
     text-transform: uppercase;
     background-color: var(--btnColor);
     border: none;
     border-radius: 5px;
+}
+
+.news-block {
+    width: 300px;
+    /* border: 1px solid white; */
+}
+
+.news-heading {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.news-item {
+    margin-bottom: 16px;
+}
+
+.news-link {
+    color: var(--tert);
+    text-decoration: none;
+}
+
+.news-text {
+    margin: 0;
+    color: #555;
+    font-family: sans-serif;
+}
+
+.opps-heading {
+    margin: 0;
+    font-weight: 400;
+}
+
+.opps-item {
+    padding-bottom: 45px;
+    font-family: sans-serif;
+}
+
+.opps-link {
+    color: var(--tert);
+    text-decoration: none;
+}
+
+.opps-text {
+    margin: 0;
+    color: #555;
+}
+
+.services-item {
+    font-family: sans-serif;
+    line-height: 2;
+}
+
+.services-link {
+    color: var(--tert);
+    text-decoration: none;
 }
 
 .slider {
@@ -151,6 +258,29 @@ body {
 }
 
 /* ids */
+
+#dateDiv1 {
+    background-color: var(--date1);
+}
+
+#dateDiv2 {
+    background-color: var(--date2);
+}
+
+#dateDiv3 {
+    background-color: var(--date3);
+}
+
+#footerSection1 {
+    padding: 56px 0 64px;
+    background-color: var(--prim);
+    background-image: var(--grad);
+}
+
+#footerSection2 {
+    padding: 10px 0 60px;
+    background-color: var(--footerSec2);
+}
 
 #headerSection1 {
     width: 100%;
@@ -188,5 +318,20 @@ body {
     margin: 0;
     width: 50%;
     float: left;
-    border: 1px solid dodgerblue;
+    /* border: 1px solid dodgerblue; */
+}
+
+#newsList {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#oppsList {
+    padding-left: 18px;
+    list-style-image: url(../images/chat.png);
+}
+
+#servicesList {
+    padding-left: 18px;
+    list-style-image: url('../images/cog.png');
 }

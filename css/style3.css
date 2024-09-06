@@ -1,0 +1,36 @@
+/* using flexbox for layout and design */
+
+:root {
+    --btnColor: #213349;
+    --date1: #be8442;
+    --date2: #bc6142;
+    --date3: #bd425e;
+    --font1: "Oswald", sans-serif;
+    --footerSec2: #0b1016;
+    --prim: #131c29;
+    --grad: radial-gradient(
+        at top center,
+        #38587e,
+        #031620
+    );
+    --sec: #ff8901;
+    --tert: #f5f5f7;
+}
+
+* {box-sizing: border-box;}
+    
+    /* tag names */
+    
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--tert);
+    }
+
+    /* classes */
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    /* border: 1px solid coral; */
+}
